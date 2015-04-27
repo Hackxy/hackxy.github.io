@@ -4,7 +4,7 @@
   <subtitle><![CDATA[关注电子教育产品与机械设计技术]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://hackxy.github.io/"/>
-  <updated>2015-04-27T13:10:25.084Z</updated>
+  <updated>2015-04-27T13:23:53.763Z</updated>
   <id>http://hackxy.github.io/</id>
   
   <author>
@@ -18,13 +18,14 @@
     <title><![CDATA[如何用hexo3.0+和github搭建博客]]></title>
     <link href="http://hackxy.github.io/2015/04/27/how-to-build-hexo/"/>
     <id>http://hackxy.github.io/2015/04/27/how-to-build-hexo/</id>
-    <published>2015-04-27T13:10:25.084Z</published>
-    <updated>2015-04-27T13:10:25.084Z</updated>
+    <published>2015-04-27T13:23:53.763Z</published>
+    <updated>2015-04-27T13:23:53.763Z</updated>
     <content type="html"><![CDATA[<h2 id="前沿">前沿</h2><p>HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和是用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本文旨在简单地介绍一下我是如何安装Hexo3.0的。</p>
 <h2 id="环境准备">环境准备</h2><h3 id="软件的安装">软件的安装</h3><p>安装Hexo前必须首先安装下列应用程序：</p>
 <ul>
 <li><a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
-<li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
+<li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a><a id="more"></a>
+</li>
 </ul>
 <h3 id="密钥的生成">密钥的生成</h3><p>安装上述2个软件后，打开Git Bash，在该软件中输入：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/<span class="class">.ssh</span> 检查本机的ssh密钥</span><br></pre></td></tr></table></figure></p>
 <p>如果提示：No such file or directory 说明你是第一次使用git。</p>
@@ -76,7 +77,12 @@
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="前沿">前沿</h2><p>HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和是用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本]]>
+    <![CDATA[<h2 id="前沿">前沿</h2><p>HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和是用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本文旨在简单地介绍一下我是如何安装Hexo3.0的。</p>
+<h2 id="环境准备">环境准备</h2><h3 id="软件的安装">软件的安装</h3><p>安装Hexo前必须首先安装下列应用程序：</p>
+<ul>
+<li><a href="http://nodejs.org/">Node.js</a></li>
+<li><a href="http://git-scm.com/">Git</a>]]>
+    
     </summary>
     
       <category term="Hexo" scheme="http://hackxy.github.io/tags/Hexo/"/>
@@ -87,9 +93,9 @@
   
   <entry>
     <title><![CDATA[如何使用 Jacman 主题]]></title>
-    <link href="http://hackxy.github.io/2015/04/25/how-to-use-jacman/"/>
-    <id>http://hackxy.github.io/2015/04/25/how-to-use-jacman/</id>
-    <published>2015-04-25T13:38:23.162Z</published>
+    <link href="http://hackxy.github.io/2015/04/27/how-to-use-jacman/"/>
+    <id>http://hackxy.github.io/2015/04/27/how-to-use-jacman/</id>
+    <published>2015-04-27T13:23:30.675Z</published>
     <updated>2015-04-25T13:38:23.162Z</updated>
     <content type="html"><![CDATA[<h2 id="主题介绍">主题介绍</h2><p><a href="https://github.com/wuchong/jacman" target="_blank" rel="external">Jacman</a> 是一款扁平化，有着响应式设计的 <a href="http://http://hexo.io/" target="_blank" rel="external">Hexo</a> 主题。本站正式使用了 Jacman 主题。Jacman 基于 <a href="https://github.com/A-limon/pacman" target="_blank" rel="external">Pacman</a> 主题修改而来，目前已有很多特性与原主题不同。你可以前往 <a href="http://wuchong.me" target="_blank" rel="external">本站</a> 和 <a href="http://wuchong.me/jacman" target="_blank" rel="external">Demo</a> 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 <a href="https://github.com/wuchong/jacman/issues" target="_blank" rel="external">issue</a>。</p>
 <p>距离当初我把 Jacman 开源至今已有半年零一周了，在这半年里也一直保持着对 Jacman 的更新。看到很多人用这款主题，fork&amp;star 数也越来越好看，我也更有动力继续完善 Jacman。Jacman 自然还有很多改进空间，首先是文档问题，有许多人通过博客、微博、QQ 询问我有关主题的问题，我也意识到之前写的帮助手册可读性太差。正好趁着这次 Jacman 大更新，写篇更详尽、readable 的手册。</p>
