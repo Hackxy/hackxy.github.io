@@ -4,7 +4,7 @@
   <subtitle><![CDATA[关注电子教育产品与机械设计技术]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://hackxy.github.io/"/>
-  <updated>2015-04-27T13:23:53.763Z</updated>
+  <updated>2015-04-27T13:27:51.805Z</updated>
   <id>http://hackxy.github.io/</id>
   
   <author>
@@ -18,8 +18,8 @@
     <title><![CDATA[如何用hexo3.0+和github搭建博客]]></title>
     <link href="http://hackxy.github.io/2015/04/27/how-to-build-hexo/"/>
     <id>http://hackxy.github.io/2015/04/27/how-to-build-hexo/</id>
-    <published>2015-04-27T13:23:53.763Z</published>
-    <updated>2015-04-27T13:23:53.763Z</updated>
+    <published>2015-04-27T13:27:51.805Z</published>
+    <updated>2015-04-27T13:27:51.805Z</updated>
     <content type="html"><![CDATA[<h2 id="前沿">前沿</h2><p>HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和是用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本文旨在简单地介绍一下我是如何安装Hexo3.0的。</p>
 <h2 id="环境准备">环境准备</h2><h3 id="软件的安装">软件的安装</h3><p>安装Hexo前必须首先安装下列应用程序：</p>
 <ul>
@@ -50,7 +50,8 @@
 <p>初始化Hexo:接着上面的操作，输入：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> init</span><br></pre></td></tr></table></figure></p>
 <p>之后npm将会自动安装你需要的组件，只需要等待npm操作即可。</p>
 <h2 id="首次体验Hexo">首次体验Hexo</h2><p>继续操作，同样是在命令行中，输入：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> g</span><br></pre></td></tr></table></figure></p>
-<p>然后输入：<br>继续操作，同样是在命令行中，输入：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> s</span><br></pre></td></tr></table></figure></p>
+<p>然后输入：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> s</span><br></pre></td></tr></table></figure>
 <p>然后会提示：<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Hexo is running <span class="keyword">at</span> <span class="keyword">http</span>://<span class="number">0.0</span>.0.0:<span class="number">4000</span>/. Press Ctrl+C <span class="built_in">to</span> <span class="built_in">stop</span>.</span><br><span class="line">在浏览器中打开<span class="keyword">http</span>://localhost:<span class="number">4000</span>/，你将会看到浏览器中一个本地化的博客已经搭建完成。</span><br></pre></td></tr></table></figure></p>
 <h2 id="配置Hexo">配置Hexo</h2><ul>
 <li><p>部署到github前，先要配置_config.yml文件，重点说下deployment，这是HEXO3.0之后与以往版本不同的地方，少有错误就会deploy失败。。</p>
@@ -68,7 +69,7 @@
 <li><p>绑定域名<br>1.在域名服务商那申请域名；<br>2.在source目录下新建一个CANEM文件，内容填写你的域名，例如：www.veolus.tk;<br>3.在域名服务商那绑定域名，选择CNAME的方式，地址为github的博客地址，例如mogodes.github.io;<br>4.过几分钟访问你的域名即可访问你的github博客地址。</p>
 </li>
 </ul>
-<p>在完成上述配置后（除了Deployment必须配置外，其余皆可暂不配置），必须安装 hexo-deployer-git：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure></p>
+<h2 id="部署HEXO">部署HEXO</h2><p>在完成上述配置后（除了Deployment必须配置外，其余皆可暂不配置），必须安装 hexo-deployer-git：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure></p>
 <p>依次输入下述三条命令：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo <span class="keyword">g</span></span><br><span class="line">hexo <span class="literal">d</span></span><br></pre></td></tr></table></figure></p>
 <p>完成部署。</p>
 <h2 id="进阶">进阶</h2><ul>
