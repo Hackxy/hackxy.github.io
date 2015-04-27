@@ -4,7 +4,7 @@
   <subtitle><![CDATA[关注电子教育产品与机械设计技术]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://hackxy.github.io/"/>
-  <updated>2015-04-27T13:27:51.805Z</updated>
+  <updated>2015-04-27T13:32:46.405Z</updated>
   <id>http://hackxy.github.io/</id>
   
   <author>
@@ -18,8 +18,8 @@
     <title><![CDATA[如何用hexo3.0+和github搭建博客]]></title>
     <link href="http://hackxy.github.io/2015/04/27/how-to-build-hexo/"/>
     <id>http://hackxy.github.io/2015/04/27/how-to-build-hexo/</id>
-    <published>2015-04-27T13:27:51.805Z</published>
-    <updated>2015-04-27T13:27:51.805Z</updated>
+    <published>2015-04-27T13:32:46.405Z</published>
+    <updated>2015-04-27T13:32:46.405Z</updated>
     <content type="html"><![CDATA[<h2 id="前沿">前沿</h2><p>HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和是用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本文旨在简单地介绍一下我是如何安装Hexo3.0的。</p>
 <h2 id="环境准备">环境准备</h2><h3 id="软件的安装">软件的安装</h3><p>安装Hexo前必须首先安装下列应用程序：</p>
 <ul>
@@ -33,8 +33,12 @@
 <p>然后系统会要你输入密码：<br><figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):<span class="variable">&lt;输入加密串&gt;</span></span><br><span class="line">Enter same passphrase again:<span class="variable">&lt;再次输入加密串&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用.</p>
 <h3 id="设置Git账户信息">设置Git账户信息</h3><p>Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user<span class="class">.name</span> <span class="string">"cnfeat"</span><span class="comment">//用户名</span></span><br><span class="line">$ git config --global user<span class="class">.email</span>  <span class="string">"cnfeat@gmail.com"</span><span class="comment">//填写自己的邮箱</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="Github的配置">Github的配置</h3><h4 id="创建page">创建page</h4><p>-打开<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a> ，注册并登录；<br>-创建New repository；<br>-进入代码库创建页面：<br>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述<br>-正确创建之后，点击此库的setting页面，点击Automatic page generator。</p>
-<h4 id="添加SSH_keys">添加SSH keys</h4><p>在本机设置SSH Key之后，需要添加到GitHub上，以完成SSH链接的设置。</p>
+<h3 id="Github的配置">Github的配置</h3><h4 id="创建page">创建page</h4><ul>
+<li>打开<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a> ，注册并登录；</li>
+<li>创建New repository；</li>
+<li>进入代码库创建页面：<br>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述</li>
+<li>正确创建之后，点击此库的setting页面，点击Automatic page generator。<h4 id="添加SSH_keys">添加SSH keys</h4>在本机设置SSH Key之后，需要添加到GitHub上，以完成SSH链接的设置。</li>
+</ul>
 <ol>
 <li>打开本地C:\Documents and Settings\Administrator.ssh\id_rsa.pub文件。此文件里面内容为刚才生成人密钥。如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。</li>
 <li>登陆github系统。点击右上角的 Account Settings—-&gt;SSH Public keys —-&gt; add another public keys</li>
@@ -43,7 +47,7 @@
 </li>
 </ol>
 <p>如果是下面的反馈：<br><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The authenticity <span class="keyword">of</span> host <span class="comment">'github.com (207.97.227.239)' can't be established.</span></span><br><span class="line">RSA <span class="keyword">key</span> fingerprint <span class="keyword">is</span> <span class="number">16</span>:<span class="number">27</span>:ac:a5:<span class="number">76</span>:<span class="number">28</span>:<span class="number">2</span>d:<span class="number">36</span>:<span class="number">63</span>:<span class="number">1</span>b:<span class="number">56</span>:<span class="number">4</span>d:eb:df:a6:<span class="number">48.</span></span><br><span class="line">Are you sure you want <span class="keyword">to</span> <span class="keyword">continue</span> connecting (yes/no)?</span><br></pre></td></tr></table></figure></p>
-<p>不要紧张，输入yes就好，然后会看到：<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi cnfeat! You've successfully authenticated, <span class="keyword">but</span> GitHub <span class="keyword">does</span> <span class="keyword">not</span> provide shell access.</span><br></pre></td></tr></table></figure></p>
+<p>不要紧张，输入yes就好，然后会看到：<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi hackxy! You've successfully authenticated, <span class="keyword">but</span> GitHub <span class="keyword">does</span> <span class="keyword">not</span> provide shell access.</span><br></pre></td></tr></table></figure></p>
 <h2 id="安装Hexo">安装Hexo</h2><p>在自己认为合适的地方创建一个文件夹，然后在文件夹空白处按住Shift+鼠标右键，然后点击在此处打开Git Bash。（同样要记住啦，下文中会使用在当前目录打开命令行来代指上述的操作）<br>在命令行中输入：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-<span class="keyword">cli</span> -<span class="keyword">g</span></span><br></pre></td></tr></table></figure></p>
 <p>可能你会看到一个WARN，但是不用担心，这不会影响你的正常使用。<br>然后输入<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure></p>
 <p>然后你会看到命令行窗口刷了一大堆白字，下面我们来看一看Hexo是不是已经安装好了。<br>在命令行中输入：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> -v</span><br></pre></td></tr></table></figure></p>
