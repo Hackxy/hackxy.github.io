@@ -4,7 +4,7 @@
   <subtitle><![CDATA[关注电子教育产品与机械设计技术]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://hackxy.github.io/"/>
-  <updated>2015-04-25T13:38:23.162Z</updated>
+  <updated>2015-04-27T12:22:11.726Z</updated>
   <id>http://hackxy.github.io/</id>
   
   <author>
@@ -13,6 +13,77 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[如何用hexo3.0+和github搭建博客]]></title>
+    <link href="http://hackxy.github.io/2015/04/27/how-to-build-hexo/"/>
+    <id>http://hackxy.github.io/2015/04/27/how-to-build-hexo/</id>
+    <published>2015-04-27T12:22:11.726Z</published>
+    <updated>2015-04-27T12:22:11.726Z</updated>
+    <content type="html"><![CDATA[<h2 id="前沿">前沿</h2><p>HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和是用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本文旨在简单地介绍一下我是如何安装Hexo3.0的。</p>
+<h2 id="环境准备">环境准备</h2><h3 id="软件的安装">软件的安装</h3><p>安装Hexo前必须首先安装下列应用程序：</p>
+<ul>
+<li><a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
+<li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
+</ul>
+<h3 id="密钥的生成">密钥的生成</h3><p>安装上述2个软件后，打开Git Bash，在该软件中输入：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/<span class="class">.ssh</span> 检查本机的ssh密钥</span><br></pre></td></tr></table></figure></p>
+<p>如果提示：No such file or directory 说明你是第一次使用git。</p>
+<p>生成新的SSH Key：<br><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"邮件地址@youremail.com"</span></span><br><span class="line">Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa <span class="keyword">key</span> pair.</span><br><span class="line">Enter file <span class="keyword">in</span> which <span class="keyword">to</span> save the <span class="keyword">key</span> (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</span><br></pre></td></tr></table></figure></p>
+<p>然后系统会要你输入密码：<br><figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):<span class="variable">&lt;输入加密串&gt;</span></span><br><span class="line">Enter same passphrase again:<span class="variable">&lt;再次输入加密串&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用.</p>
+<h3 id="设置Git账户信息">设置Git账户信息</h3><p>Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user<span class="class">.name</span> <span class="string">"cnfeat"</span><span class="comment">//用户名</span></span><br><span class="line">$ git config --global user<span class="class">.email</span>  <span class="string">"cnfeat@gmail.com"</span><span class="comment">//填写自己的邮箱</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="Github的配置">Github的配置</h3><h4 id="创建page">创建page</h4><p>-打开<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a> ，注册并登录；<br>-创建New repository；<br>-进入代码库创建页面：<br>在Repository name下填写yourname.github.io，Description (optional)下填写一些简单的描述<br>-正确创建之后，点击此库的setting页面，点击Automatic page generator。</p>
+<h4 id="添加SSH_keys">添加SSH keys</h4><p>在本机设置SSH Key之后，需要添加到GitHub上，以完成SSH链接的设置。</p>
+<ol>
+<li>打开本地C:\Documents and Settings\Administrator.ssh\id_rsa.pub文件。此文件里面内容为刚才生成人密钥。如果看不到这个文件，你需要设置显示隐藏文件。准确的复制这个文件的内容，才能保证设置的成功。</li>
+<li>登陆github系统。点击右上角的 Account Settings—-&gt;SSH Public keys —-&gt; add another public keys</li>
+<li>把你本地生成的密钥复制到里面（key文本框中）， 点击 add key 就ok了.</li>
+<li>测试<br>可以输入下面的命令，看看设置是否成功，git@github.com的部分不要修改：<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh -<span class="constant">T </span>git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>如果是下面的反馈：<br><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">The authenticity <span class="keyword">of</span> host <span class="comment">'github.com (207.97.227.239)' can't be established.</span></span><br><span class="line">RSA <span class="keyword">key</span> fingerprint <span class="keyword">is</span> <span class="number">16</span>:<span class="number">27</span>:ac:a5:<span class="number">76</span>:<span class="number">28</span>:<span class="number">2</span>d:<span class="number">36</span>:<span class="number">63</span>:<span class="number">1</span>b:<span class="number">56</span>:<span class="number">4</span>d:eb:df:a6:<span class="number">48.</span></span><br><span class="line">Are you sure you want <span class="keyword">to</span> <span class="keyword">continue</span> connecting (yes/no)?</span><br></pre></td></tr></table></figure></p>
+<p>不要紧张，输入yes就好，然后会看到：<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi cnfeat! You've successfully authenticated, <span class="keyword">but</span> GitHub <span class="keyword">does</span> <span class="keyword">not</span> provide shell access.</span><br></pre></td></tr></table></figure></p>
+<h2 id="安装Hexo">安装Hexo</h2><p>在自己认为合适的地方创建一个文件夹，然后在文件夹空白处按住Shift+鼠标右键，然后点击在此处打开Git Bash。（同样要记住啦，下文中会使用在当前目录打开命令行来代指上述的操作）<br>在命令行中输入：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-<span class="keyword">cli</span> -<span class="keyword">g</span></span><br></pre></td></tr></table></figure></p>
+<p>可能你会看到一个WARN，但是不用担心，这不会影响你的正常使用。<br>然后输入<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="operator"><span class="keyword">install</span> hexo <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure></p>
+<p>然后你会看到命令行窗口刷了一大堆白字，下面我们来看一看Hexo是不是已经安装好了。<br>在命令行中输入：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> -v</span><br></pre></td></tr></table></figure></p>
+<p>初始化Hexo:接着上面的操作，输入：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> init</span><br></pre></td></tr></table></figure></p>
+<p>之后npm将会自动安装你需要的组件，只需要等待npm操作即可。</p>
+<h2 id="首次体验Hexo">首次体验Hexo</h2><p>继续操作，同样是在命令行中，输入：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> g</span><br></pre></td></tr></table></figure></p>
+<p>然后输入：<br>继续操作，同样是在命令行中，输入：<br><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> s</span><br></pre></td></tr></table></figure></p>
+<p>然后会提示：<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Hexo is running <span class="keyword">at</span> <span class="keyword">http</span>://<span class="number">0.0</span>.0.0:<span class="number">4000</span>/. Press Ctrl+C <span class="built_in">to</span> <span class="built_in">stop</span>.</span><br><span class="line">在浏览器中打开<span class="keyword">http</span>://localhost:<span class="number">4000</span>/，你将会看到浏览器中一个本地化的博客已经搭建完成。</span><br></pre></td></tr></table></figure></p>
+<h2 id="配置Hexo">配置Hexo</h2><ul>
+<li><p>部署到github前，先要配置_config.yml文件，重点说下deployment，这是HEXO3.0之后与以往版本不同的地方，少有错误就会deploy失败。。</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## <span class="string">Docs:</span> <span class="string">http:</span><span class="comment">//hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="string">deploy:</span></span><br><span class="line"><span class="label">  type:</span> git</span><br><span class="line"><span class="label">  repository:</span> git<span class="annotation">@github</span>.<span class="string">com:</span>hackxy/hackxy.github.io.git # 这里是你的github.io的ssh地址</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装插件：<br>添加sitemap和feed插件</p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-generator-sitemap</span><br><span class="line">$ npm <span class="keyword">install</span> hexo-generator-feed</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>修改_config.yml，增加以下内容</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># Extensions</span></span><br><span class="line"><span class="label">Plugins:</span></span><br><span class="line">- hexo-generator-feed</span><br><span class="line">- hexo-generator-sitemap</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#Feed Atom</span></span><br><span class="line"><span class="label">feed:</span></span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: <span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#sitemap</span></span><br><span class="line"><span class="label">sitemap:</span></span><br><span class="line">  path: sitemap.xml</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>建立About页面：<br>首先在主目录找到_config.yml，找到url添加about_dir: about到这个板块。然后在/source里面建立about文件夹。在about文件夹里建立index.md。编辑index.md就和发布其他的文章一样，格式都一样。</p>
+</li>
+<li><p>绑定域名<br>1.在域名服务商那申请域名；<br>2.在source目录下新建一个CANEM文件，内容填写你的域名，例如：www.veolus.tk;<br>3.在域名服务商那绑定域名，选择CNAME的方式，地址为github的博客地址，例如mogodes.github.io;<br>4.过几分钟访问你的域名即可访问你的github博客地址。</p>
+</li>
+</ul>
+<p>在完成上述配置后（除了Deployment必须配置外，其余皆可暂不配置），必须安装 hexo-deployer-git：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure></p>
+<p>依次输入下述三条命令：<br><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo <span class="keyword">g</span></span><br><span class="line">hexo <span class="literal">d</span></span><br></pre></td></tr></table></figure></p>
+<p>完成部署。</p>
+<h2 id="进阶">进阶</h2><ul>
+<li>【GIT】（<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000）" target="_blank" rel="external">http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000）</a></li>
+<li>【hexo文档】（<a href="http://hexo.io）" target="_blank" rel="external">http://hexo.io）</a></li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="前沿">前沿</h2><p>HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和是用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本]]>
+    </summary>
+    
+      <category term="Hexo" scheme="http://hackxy.github.io/tags/Hexo/"/>
+    
+      <category term="Hexo" scheme="http://hackxy.github.io/categories/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[如何使用 Jacman 主题]]></title>
