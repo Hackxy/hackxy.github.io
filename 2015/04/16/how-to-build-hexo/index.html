@@ -4,34 +4,22 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>如何用hexo3.0+和github搭建博客 | Veolus</title>
+    <title>利用hexo3.0+和github搭建博客 | Veolus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Hackxy">
     
 
     
-    <meta name="description" content="前沿HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和是用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本文旨在简单地介绍一下我是如何安装Hexo3.0的。
-环境准备软件的安装安装Hexo前必须首先安装下列应用程序：
-
-Node.js
-Git">
+    <meta name="description" content="如何利用hexo3.0搭建博客.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何用hexo3.0+和github搭建博客">
-<meta property="og:url" content="http://hackxy.github.io/2015/04/27/how-to-build-hexo/index.html">
+<meta property="og:title" content="利用hexo3.0+和github搭建博客">
+<meta property="og:url" content="http://hackxy.github.io/2015/04/16/how-to-build-hexo/index.html">
 <meta property="og:site_name" content="Veolus">
-<meta property="og:description" content="前沿HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和是用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本文旨在简单地介绍一下我是如何安装Hexo3.0的。
-环境准备软件的安装安装Hexo前必须首先安装下列应用程序：
-
-Node.js
-Git">
+<meta property="og:description" content="如何利用hexo3.0搭建博客.">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="如何用hexo3.0+和github搭建博客">
-<meta name="twitter:description" content="前沿HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和是用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本文旨在简单地介绍一下我是如何安装Hexo3.0的。
-环境准备软件的安装安装Hexo前必须首先安装下列应用程序：
-
-Node.js
-Git">
+<meta name="twitter:title" content="利用hexo3.0+和github搭建博客">
+<meta name="twitter:description" content="如何利用hexo3.0搭建博客.">
 <meta name="twitter:creator" content="@hackxy">
 <link rel="publisher" href="+hackxy">
 
@@ -93,14 +81,14 @@ Git">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/04/27/how-to-build-hexo/" title="如何用hexo3.0+和github搭建博客" itemprop="url">如何用hexo3.0+和github搭建博客</a>
+      <a href="/2015/04/16/how-to-build-hexo/" title="利用hexo3.0+和github搭建博客" itemprop="url">利用hexo3.0+和github搭建博客</a>
   </h1>
   <p class="article-author">By
        
 		<a href="https://plus.google.com/+hackxy?rel=author" title="Hackxy" target="_blank" itemprop="author">Hackxy</a>
 		
   <p class="article-time">
-    <time datetime="2015-04-27T13:35:14.235Z" itemprop="datePublished"> 发表于 2015-04-27</time>
+    <time datetime="2015-04-16T02:10:16.000Z" itemprop="datePublished"> 发表于 2015-04-16</time>
     
   </p>
 </header>
@@ -125,7 +113,7 @@ Git">
 <p>生成新的SSH Key：<br><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"邮件地址@youremail.com"</span></span><br><span class="line">Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa <span class="keyword">key</span> pair.</span><br><span class="line">Enter file <span class="keyword">in</span> which <span class="keyword">to</span> save the <span class="keyword">key</span> (/Users/your_user_directory/.ssh/id_rsa):&lt;回车就好&gt;</span><br></pre></td></tr></table></figure></p>
 <p>然后系统会要你输入密码：<br><figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):<span class="variable">&lt;输入加密串&gt;</span></span><br><span class="line">Enter same passphrase again:<span class="variable">&lt;再次输入加密串&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>在回车中会提示你输入一个密码，这个密码会在你提交项目时使用.</p>
-<h3 id="设置Git账户信息">设置Git账户信息</h3><p>Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user<span class="class">.name</span> <span class="string">"cnfeat"</span><span class="comment">//用户名</span></span><br><span class="line">$ git config --global user<span class="class">.email</span>  <span class="string">"cnfeat@gmail.com"</span><span class="comment">//填写自己的邮箱</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="设置Git账户信息">设置Git账户信息</h3><p>Git会根据用户的名字和邮箱来记录提交。GitHub也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的。<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user<span class="class">.name</span> <span class="string">"hackxy"</span><span class="comment">//用户名</span></span><br><span class="line">$ git config --global user<span class="class">.email</span>  <span class="string">"hackxy@gmail.com"</span><span class="comment">//填写自己的邮箱</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="Github的配置">Github的配置</h3><h4 id="创建page">创建page</h4><ul>
 <li>打开<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a> ，注册并登录；</li>
 <li>创建New repository；</li>
@@ -149,19 +137,18 @@ Git">
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">hexo</span> s</span><br></pre></td></tr></table></figure>
 <p>然后会提示：<br><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Hexo is running <span class="keyword">at</span> <span class="keyword">http</span>://<span class="number">0.0</span>.0.0:<span class="number">4000</span>/. Press Ctrl+C <span class="built_in">to</span> <span class="built_in">stop</span>.</span><br><span class="line">在浏览器中打开<span class="keyword">http</span>://localhost:<span class="number">4000</span>/，你将会看到浏览器中一个本地化的博客已经搭建完成。</span><br></pre></td></tr></table></figure></p>
 <h2 id="配置Hexo">配置Hexo</h2><ul>
-<li><p>部署到github前，先要配置_config.yml文件，重点说下deployment，这是HEXO3.0之后与以往版本不同的地方，少有错误就会deploy失败。。</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## <span class="string">Docs:</span> <span class="string">http:</span><span class="comment">//hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="string">deploy:</span></span><br><span class="line"><span class="label">  type:</span> git</span><br><span class="line"><span class="label">  repository:</span> git<span class="annotation">@github</span>.<span class="string">com:</span>hackxy/hackxy.github.io.git # 这里是你的github.io的ssh地址</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装插件：<br>添加sitemap和feed插件</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-generator-sitemap</span><br><span class="line">$ npm <span class="keyword">install</span> hexo-generator-feed</span><br></pre></td></tr></table></figure>
+<li>部署到github前，先要配置_config.yml文件，重点说下deployment，这是HEXO3.0之后与以往版本不同的地方，少有错误就会deploy失败。。<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## <span class="string">Docs:</span> <span class="string">http:</span><span class="comment">//hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="string">deploy:</span></span><br><span class="line"><span class="label">  type:</span> git</span><br><span class="line"><span class="label">  repository:</span> git<span class="annotation">@github</span>.<span class="string">com:</span>hackxy/hackxy.github.io.git # 这里是你的github.io的ssh地址</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p>修改_config.yml，增加以下内容</p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># Extensions</span></span><br><span class="line"><span class="label">Plugins:</span></span><br><span class="line">- hexo-generator-feed</span><br><span class="line">- hexo-generator-sitemap</span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#Feed Atom</span></span><br><span class="line"><span class="label">feed:</span></span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: <span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#sitemap</span></span><br><span class="line"><span class="label">sitemap:</span></span><br><span class="line">  path: sitemap.xml</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装插件：<br>添加sitemap和feed插件<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="keyword">install</span> hexo-generator-sitemap</span><br><span class="line">$ npm <span class="keyword">install</span> hexo-generator-feed</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>修改_config.yml，增加以下内容<br><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor"># Extensions</span></span><br><span class="line"><span class="label">Plugins:</span></span><br><span class="line">- hexo-generator-feed</span><br><span class="line">- hexo-generator-sitemap</span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># Feed Atom</span></span><br><span class="line"><span class="label">feed:</span></span><br><span class="line">  type: atom</span><br><span class="line">  path: atom.xml</span><br><span class="line">  limit: <span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor"># sitemap</span></span><br><span class="line"><span class="label">sitemap:</span></span><br><span class="line">  path: sitemap.xml</span><br></pre></td></tr></table></figure></p>
 <ul>
 <li><p>建立About页面：<br>首先在主目录找到_config.yml，找到url添加about_dir: about到这个板块。然后在/source里面建立about文件夹。在about文件夹里建立index.md。编辑index.md就和发布其他的文章一样，格式都一样。</p>
 </li>
-<li><p>绑定域名<br>1.在域名服务商那申请域名；<br>2.在source目录下新建一个CANEM文件，内容填写你的域名，例如：www.veolus.tk;<br>3.在域名服务商那绑定域名，选择CNAME的方式，地址为github的博客地址，例如mogodes.github.io;<br>4.过几分钟访问你的域名即可访问你的github博客地址。</p>
+<li><p>绑定域名<br>1.在域名服务商那申请域名；<br>2.在source目录下新建一个CANEM文件，内容填写你的域名，例如：www.veolus.tk;<br>3.在域名服务商那绑定域名，选择CNAME的方式，地址为github的博客地址，例如hackxy.github.io;<br>4.过几分钟访问你的域名即可访问你的github博客地址。</p>
 </li>
 </ul>
 <h2 id="部署HEXO">部署HEXO</h2><p>在完成上述配置后（除了Deployment必须配置外，其余皆可暂不配置），必须安装 hexo-deployer-git：<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure></p>
@@ -193,7 +180,7 @@ Git">
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://hackxy.github.io/2015/04/27/how-to-build-hexo/" data-title="如何用hexo3.0+和github搭建博客 | Veolus" data-tsina="null" class="share clearfix">
+	  <div data-url="http://hackxy.github.io/2015/04/16/how-to-build-hexo/" data-title="利用hexo3.0+和github搭建博客 | Veolus" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -206,14 +193,14 @@ Git">
 	
 <nav class="article-nav clearfix">
  
-
-<div class="next">
-<a href="/2015/04/27/how-to-use-jacman/"  title="如何使用 Jacman 主题">
- <strong>下一篇：</strong><br/> 
- <span>如何使用 Jacman 主题
-</span>
+ <div class="prev" >
+ <a href="/2015/04/24/images/" title="Images">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Images</span>
 </a>
 </div>
+
 
 </nav>
 
