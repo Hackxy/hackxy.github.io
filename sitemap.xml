@@ -2,32 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://hackxy.github.io/2015/04/16/how-to-build-hexo/</loc>
-    <lastmod>2015-05-10T07:08:14.774Z</lastmod>
+    <loc>http://mechcn.com/2015/04/16/how-to-build-hexo/</loc>
+    <lastmod>2015-05-12T15:53:10.572Z</lastmod>
   </url>
   
   <url>
-    <loc>http://hackxy.github.io/2015/04/27/how-to-use-jacman/</loc>
-    <lastmod>2015-04-25T13:38:23.162Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hackxy.github.io/2015/04/24/images/</loc>
-    <lastmod>2015-04-24T15:06:47.677Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hackxy.github.io/categories/index.html</loc>
+    <loc>http://mechcn.com/categories/index.html</loc>
     <lastmod>2015-04-22T16:04:15.210Z</lastmod>
   </url>
   
   <url>
-    <loc>http://hackxy.github.io/tags/index.html</loc>
+    <loc>http://mechcn.com/tags/index.html</loc>
     <lastmod>2015-04-22T16:03:13.464Z</lastmod>
   </url>
   
   <url>
-    <loc>http://hackxy.github.io/about/index.html</loc>
+    <loc>http://mechcn.com/about/index.html</loc>
     <lastmod>2015-04-22T12:38:16.360Z</lastmod>
   </url>
   
