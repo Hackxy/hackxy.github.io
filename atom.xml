@@ -4,7 +4,7 @@
   <subtitle><![CDATA[机械中文之家]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://mechcn.com/"/>
-  <updated>2015-05-13T15:01:53.636Z</updated>
+  <updated>2015-05-13T15:03:27.686Z</updated>
   <id>http://mechcn.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://mechcn.com/2015/04/16/how-to-build-hexo/"/>
     <id>http://mechcn.com/2015/04/16/how-to-build-hexo/</id>
     <published>2015-04-16T02:10:16.000Z</published>
-    <updated>2015-05-13T15:01:53.636Z</updated>
+    <updated>2015-05-13T15:03:27.686Z</updated>
     <content type="html"><![CDATA[<h2 id="前沿">前沿</h2><p>HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和使用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本文旨在简单地介绍一下我是如何安装Hexo3.0的。</p>
 <h2 id="环境准备">环境准备</h2><h3 id="软件的安装">软件的安装</h3><p>安装Hexo前必须首先安装下列应用程序：</p>
 <ul>
@@ -84,7 +84,7 @@
     
     </summary>
     
-      <category term="English" scheme="http://mechcn.com/tags/English/"/>
+      <category term="Test" scheme="http://mechcn.com/tags/Test/"/>
     
       <category term="Hexo" scheme="http://mechcn.com/categories/Hexo/"/>
     
