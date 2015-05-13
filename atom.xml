@@ -4,7 +4,7 @@
   <subtitle><![CDATA[机械中文之家]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://mechcn.com/"/>
-  <updated>2015-05-12T15:53:10.572Z</updated>
+  <updated>2015-05-13T14:53:13.689Z</updated>
   <id>http://mechcn.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <link href="http://mechcn.com/2015/04/16/how-to-build-hexo/"/>
     <id>http://mechcn.com/2015/04/16/how-to-build-hexo/</id>
     <published>2015-04-16T02:10:16.000Z</published>
-    <updated>2015-05-12T15:53:10.572Z</updated>
-    <content type="html"><![CDATA[<h2 id="前沿">前沿</h2><p>HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和是用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本文旨在简单地介绍一下我是如何安装Hexo3.0的。</p>
+    <updated>2015-05-13T14:53:13.689Z</updated>
+    <content type="html"><![CDATA[<h2 id="前沿">前沿</h2><p>HEXO是一个快速、高效的博客框架，利用免费的GitHub项目空间等便可为自己搭建一个完全属于个人的定制化博客。目前网上已经有许多的教程指导如何来安装和使用Hexo，但是在Hexo升级到3.0之后，这些教程或多或少都存在一定的小问题。本文旨在简单地介绍一下我是如何安装Hexo3.0的。</p>
 <h2 id="环境准备">环境准备</h2><h3 id="软件的安装">软件的安装</h3><p>安装Hexo前必须首先安装下列应用程序：</p>
 <ul>
 <li><a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
@@ -87,6 +87,29 @@
       <category term="Hexo" scheme="http://mechcn.com/tags/Hexo/"/>
     
       <category term="Hexo" scheme="http://mechcn.com/categories/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Lorem Ipsum]]></title>
+    <link href="http://mechcn.com/2014/03/15/lorem-ipsum/"/>
+    <id>http://mechcn.com/2014/03/15/lorem-ipsum/</id>
+    <published>2014-03-15T12:17:16.000Z</published>
+    <updated>2015-04-07T14:47:06.000Z</updated>
+    <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p><img src="/hexo-theme-freemind/images/lorem-ipsum/lorem-ipsum.jpg" alt="Lorem Ipsum"></p>
+<a id="more"></a>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p><img src="/hexo-theme-freemind/images/lorem-ipsum/lorem-ipsum.jpg" alt="Lorem Ipsum"></p>]]>
+    
+    </summary>
+    
+      <category term="English" scheme="http://mechcn.com/tags/English/"/>
+    
+      <category term="Test" scheme="http://mechcn.com/categories/Test/"/>
     
   </entry>
   
