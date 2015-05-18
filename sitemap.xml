@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://mechcn.com/2014/03/15/lorem-ipsum/</loc>
+    <lastmod>2015-05-13T15:35:01.465Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://mechcn.com/2015/04/16/how-to-build-hexo/</loc>
     <lastmod>2015-05-13T15:08:40.091Z</lastmod>
   </url>
@@ -19,11 +24,6 @@
   <url>
     <loc>http://mechcn.com/about/index.html</loc>
     <lastmod>2015-04-22T12:38:16.360Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://mechcn.com/2014/03/15/lorem-ipsum/</loc>
-    <lastmod>2015-04-07T14:47:06.000Z</lastmod>
   </url>
   
 </urlset>

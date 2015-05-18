@@ -218,14 +218,16 @@ var jiathis_config = {data_track_clickback:'true'};
 <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=2026013" charset="utf-8"></script>
 </br>
 <!-- JiaThis Button END -->
-
-	<!-- comment -->
+	
+		<!-- comment -->
 	
 <section id="comment">
   <h2 class="title">留言</h2>
 
   
-  	 <div class="ds-thread" data-thread-key="2015/04/16/how-to-build-hexo/" data-title="利用hexo3.0+和github搭建博客" data-url="http://mechcn.com/2015/04/16/how-to-build-hexo/"></div>  
+  	 <div id="disqus_thread">
+     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  	 </div>
   
 </section>
 
@@ -307,15 +309,14 @@ var jiathis_config = {data_track_clickback:'true'};
 
 
 <script type="text/javascript">
-  var duoshuoQuery = { short_name: 'aeolus' };
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';
-    ds.async = true;
-    ds.src = 'http://static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
+var disqus_shortname = 'hackxy';
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
 </script>
 
 
